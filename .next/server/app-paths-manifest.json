@@ -1,0 +1,10 @@
+{
+  "/home/page": "app/home/page.js",
+  "/page": "app/page.js",
+  "/(auth)/seller/login/page": "app/(auth)/seller/login/page.js",
+  "/(auth)/buyer/login/page": "app/(auth)/buyer/login/page.js",
+  "/favicon.ico/route": "app/favicon.ico/route.js",
+  "/api/post/get/route": "app/api/post/get/route.js",
+  "/api/user/login/route": "app/api/user/login/route.js",
+  "/api/user/loginById/route": "app/api/user/loginById/route.js"
+}

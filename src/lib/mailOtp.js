@@ -13,9 +13,9 @@ const transporter = nodemailer.createTransport({
   async function MailOTP(email,otp) {
     // send mail with defined transport object
     const info = await transporter.sendMail({
-      from: '"Maddison " utkarshanal2016@gmail.com', // sender address
+      from: '"Rentify " utkarshanal2016@gmail.com', // sender address
       to: email, // list of receivers
-      subject: "Hello ✔", // Subject line
+      subject: "OTP ✔", // Subject line
       html: `<b>OTP is ${otp}</b>`, // html body
     });
   

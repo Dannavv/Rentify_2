@@ -32,7 +32,7 @@ const transporter = nodemailer.createTransport({
     await transporter.sendMail({
       from: '"Rentify " utkarshanal2016@gmail.com', // sender address
       to: buyer.email, // list of receivers
-      subject: "Buyer information ", // Subject line
+      subject: "Seller information ", // Subject line
       html: `
       <h1>Seller Information</h1>
       <p><strong>Name:</strong> ${seller.firstName} ${seller.lastName}</p>

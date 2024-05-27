@@ -7,6 +7,7 @@ import { useUser } from "@/context/User";
 import { removeCookie } from "@/lib/cookie";
 import { Mail, Plus } from "lucide-react";
 import Link from "next/link";
+// import { useRouter } from "next/router";
 import { useRouter } from "next/navigation";
 import { useEffect, useState } from "react";
 
@@ -35,8 +36,11 @@ export default function HomePage() {
 
   const handleLogout = () => {
     // alert("hello")
+    console.log("log out")
     removeCookie("id");
-    router.push("/");
+    // router.refresh()
+    // router.reload()
+    window.location.reload()
   };
 
   const handleSignIn = () => {

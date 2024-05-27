@@ -78,6 +78,7 @@ export default function PostHome({ post, search, mode }) {
     const fetchData = async () => {
       try {
         const response = await fetch(`/api/post/${post._id}`);
+        
         if (!response.ok) {
           throw new Error("Failed to fetch post details");
         }
